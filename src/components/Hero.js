@@ -13,7 +13,7 @@ const Hero = ({ handleLogout }) => {
 
       {/*Här ska finnas Route till activities */}
 
-        <Button onClick={handleLogout}>Log Out</Button>
+        <Button onClick={handleLogout}>Logga ut</Button>
     </>
   );
 };
