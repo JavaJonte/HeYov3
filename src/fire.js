@@ -3,6 +3,8 @@ import firebase from "firebase";
 const firebaseConfig = {
   apiKey: "AIzaSyA64m1CCIfnPfwhT0cRsrPMZhxfSmQFReI",
   authDomain: "heyoagain.firebaseapp.com",
+  databaseURL:
+    "https://heyoagain-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "heyoagain",
   storageBucket: "heyoagain.appspot.com",
   messagingSenderId: "245247651298",
@@ -10,6 +12,6 @@ const firebaseConfig = {
   measurementId: "G-2YH7VH9MF2",
 };
 
-const fire = firebase.initializeApp(firebaseConfig);
+export const fire = firebase.initializeApp(firebaseConfig);
 
-export default fire;
+export default firebase;
