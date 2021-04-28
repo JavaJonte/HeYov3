@@ -76,16 +76,10 @@ const LoginSystem = () => {
 
   useEffect(() => {
     authListener();
-  }, []);
+  });
 
   return (
     <div className="App">
-      <Container className="logo-container">
-        <h1 className="logo">HEYO!</h1>
-      </Container>
-
-      <Container className="hero-container"></Container>
-
       {user ? (
         <Hero handleLogout={handleLogout} />
       ) : (

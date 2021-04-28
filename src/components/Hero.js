@@ -1,11 +1,13 @@
 import React from "react";
-import { Button, Nav } from "react-bootstrap";
+import { Button, Nav, Container } from "react-bootstrap";
 
 const Hero = ({ handleLogout }) => {
   return (
     <section className="hero">
       <Nav>
-        <h2>HEYYOO DASHBORD DETTA SYNS INLOGGAT</h2>
+      <Container className="logo-container">
+        <h1 className="logo">HEYO!</h1>
+      </Container>
 
         <Button onClick={handleLogout}>Log Out</Button>
       </Nav>
