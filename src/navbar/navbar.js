@@ -19,6 +19,7 @@ const styles = {
 
 const Navbar = () => {
   const isMobile = useMobile();
+
   return (
     <nav1>
       <section>
