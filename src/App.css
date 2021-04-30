@@ -1,10 +1,9 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  font-family: "Poppins";
 }
 
+/*Knapp för Logga in/Registrera/Logga ut*/
 button {
   background: #FF9D66;
   border-radius: 40px;
@@ -18,7 +17,7 @@ button {
   letter-spacing: 0.09em;
   text-decoration: none;
   color: white;
-  width: 176px;
+  
   
 }
 
@@ -29,7 +28,7 @@ button {
   background: #e9e9e9;
   display: flex;
 }
-
+/*Inloggning/Registrerg sida*/
 .login .loginContainer {
   padding: 60px;
   margin: auto;
@@ -94,8 +93,131 @@ button {
 /* Navbar */
 .nav1, li {
   display: inline;
+  
   }
 /* Position av ikonerna i navbars */
 #navbaricons {
   margin-top: 15px;
+}
+
+.emptyCalendar{
+  max-width: 298px;
+  margin: 0 auto;
+  font-family: Poppins;
+  justify-content: 0 auto;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+h1 {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: Poppins;
+}
+h2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+#callogo {
+  position: center;
+  justify-content: 0 auto;
+  margin-left: 135px;
+}
+
+.webcontext {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: 0 auto;
+  align-items: center;
+}
+
+#addButton {
+  margin: 0;
+  min-width: 203px;
+  background: #FF9D66;
+  border-radius: 40px;
+  font-family: Poppins;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  box-shadow: 0px 4px 10px 7px rgba(231, 217, 204, 0.8);
+  align-items: center;
+}
+
+/* Formulär att skapa ny event*/
+.addForm {
+  background-color: #FFF0E2;
+  box-shadow: 0px 4px 10px 7px rgba(231, 217, 204, 0.8);
+  border-radius: 15px;
+  color: #404040;
+  width: 344px;
+  height: 540px;
+  max-width: 344px;
+  position: static;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  text-align: left;
+  padding: 5px;
+  margin: 0 auto;
+} 
+/* Spara knapp */
+.addInForm {
+  margin-left: 35%;
+  background: #FF9D66;
+  border-radius: 40px;
+  font-family: Poppins;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0px 4px 10px 7px rgba(231, 217, 204, 0.8);
+}
+.formtext, .formtextarea {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #404040;
+  background: #FFFFFF;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  width: 298px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.formtextarea {
+  height: 144px;
+}
+::placeholder {
+  font-family: Poppins;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.eventcard {
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 10px 7px rgba(231, 217, 204, 0.8);
+  border-radius: 15px;
+  color: #404040;
+  width: 400px;
+  height: 250px;
+  max-width: 400px;
+  position: static;
+  margin-bottom: 100px;
+  text-align: left;
+  padding: 5px;
+  display: flexbox;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+/* Text i eventkortet */
+h1, h2 {
+font-family: Poppins;
+font-size: 15px;
+margin-left: 16px;
+}
+h3 {
+font-family: Poppins;
+font-size: 12px;
+margin-left: 16px;
 }
