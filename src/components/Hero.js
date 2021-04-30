@@ -23,6 +23,7 @@ const Hero = ({ handleLogout }) => {
 
             {/*Här finns Routes till de olika komponenter*/}
             <Switch>
+                {/*TODO: Lägga in route för path"/" alltså hemsida*/}
                 <Route path="/activities">
                     <Activities />
                 </Route>
