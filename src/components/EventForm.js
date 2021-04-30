@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-<<<<<<< HEAD
 import fire from "../fire";
-=======
->>>>>>> main
 import firebase from "../fire";
 
 export default function EventForm() {
@@ -90,8 +87,4 @@ export default function EventForm() {
       </button>
     </div>
   );
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> main
