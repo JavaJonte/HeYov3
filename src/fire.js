@@ -14,4 +14,8 @@ const firebaseConfig = {
 
 export const fire = firebase.initializeApp(firebaseConfig);
 
+<<<<<<< HEAD
 export default firebase;
+=======
+export default firebase;
+>>>>>>> main

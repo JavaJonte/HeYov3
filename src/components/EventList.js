@@ -24,10 +24,19 @@ export default function EventList() {
 
   return (
     <>
+<<<<<<< HEAD
       <div>
         <Link to="/addevent" id="addButton">
           Skapa aktivitet +
         </Link>
+=======
+      <div className="webcontext">
+          <Container>
+        <Link to="/addevent" id="addButton">
+          Skapa aktivitet +
+        </Link>
+          </Container>
+>>>>>>> main
         {eventList.length !== 0 ? (
           eventList.map((event, index) => <Event event={event} key={index} />)
         ) : (

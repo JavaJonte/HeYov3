@@ -21,4 +21,8 @@ export default function Event({ event }) {
       </button>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main

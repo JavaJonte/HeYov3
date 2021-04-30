@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 
+
 const Login = (props) => {
   const {
     email,
@@ -18,7 +19,28 @@ const Login = (props) => {
   return (
     <section className="login">
       <Container className="loginContainer">
-        <label>Username</label>
+        <Container className="btnContainer">
+          {hasAccount ? (
+            <>
+              <Button onClick={handleLogin}>&nbsp;&nbsp;&nbsp;LOGGA IN&nbsp;&nbsp;&nbsp;</Button>
+              <p>
+                Har du inget konto? 
+                <span onClick={() => setHasAccount(!hasAccount)}>
+                  Registrera dig!
+                </span>
+              </p>
+            </>
+          ) : (
+            <>
+              <Button onClick={handleSignUp}>&nbsp;REGISTRERA&nbsp;</Button>
+              <p>
+                Har du redan ett konto?
+                <span onClick={() => setHasAccount(!hasAccount)}>Logga in</span>
+              </p>
+            </>
+          )}
+        </Container>
+        <label>E-post</label>
         <input
           type="text"
           autoFocus
@@ -27,7 +49,7 @@ const Login = (props) => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <p className="errorMsg">{emailError}</p>
-        <label>Password</label>
+        <label>Lösenord</label>
         <input
           type="password"
           required
@@ -35,26 +57,6 @@ const Login = (props) => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <p className="errorMsg">{passwordError}</p>
-
-        <Container className="btnContainer">
-          {hasAccount ? (
-            <>
-              <Button onClick={handleLogin}>Sign In</Button>
-              <p>
-                Dont have an account ?
-                <span onClick={() => setHasAccount(!hasAccount)}>Sign Up</span>
-              </p>
-            </>
-          ) : (
-            <>
-              <Button onClick={handleSignUp}>Sign Up</Button>
-              <p>
-                Have an account ?
-                <span onClick={() => setHasAccount(!hasAccount)}>Sign in</span>
-              </p>
-            </>
-          )}
-        </Container>
       </Container>
     </section>
   );
