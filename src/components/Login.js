@@ -22,7 +22,7 @@ const Login = (props) => {
         <Container className="btnContainer">
           {hasAccount ? (
             <>
-              <Button onClick={handleLogin}>&nbsp;&nbsp;&nbsp;LOGGA IN&nbsp;&nbsp;&nbsp;</Button>
+              <Button onClick={handleLogin}>&nbsp;&nbsp;&nbsp;GO&nbsp;&nbsp;&nbsp;</Button>
               <p>
                 Har du inget konto? 
                 <span onClick={() => setHasAccount(!hasAccount)}>
@@ -32,7 +32,7 @@ const Login = (props) => {
             </>
           ) : (
             <>
-              <Button onClick={handleSignUp}>&nbsp;REGISTRERA&nbsp;</Button>
+              <Button onClick={handleSignUp}>&nbsp;GO1&nbsp;</Button>
               <p>
                 Har du redan ett konto?
                 <span onClick={() => setHasAccount(!hasAccount)}>Logga in</span>
