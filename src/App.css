@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   padding: 0;
+  color:#404040;
 }
 
 /*Knapp för Logga in/Registrera/Logga ut*/
@@ -101,22 +102,24 @@ button {
 }
 
 .emptyCalendar{
+  display: flex;
   max-width: 298px;
   margin: 0 auto;
   font-family: Poppins;
-  justify-content: 0 auto;
+  justify-content: center;
   text-align: left;
   margin-top: 50px;
   margin-bottom: 30px;
 }
 h1 {
   font-weight: 500!important;
-  font-size: 18px;
+  font-size: 18px!important;
   font-family: Poppins;
+  margin-bottom: 30px;
 }
 h2 {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 400!important;
 }
 #callogo {
   position: center;
@@ -127,13 +130,14 @@ h2 {
 .webcontext {
   margin-top: 20px;
   margin-bottom: 20px;
-  justify-content: 0 auto;
+  justify-content: center;
   align-items: center;
 }
 
 #addButton {
   margin: 0;
   min-width: 203px;
+  max-width: 203px;
   background: #FF9D66;
   border-radius: 40px;
   font-family: Poppins;
@@ -141,34 +145,37 @@ h2 {
   color: white;
   padding: 5px;
   box-shadow: 0px 4px 10px 7px rgba(231, 217, 204, 0.8);
-  align-items: center;
+  
 }
 
 /* Formulär att skapa ny event*/
 .addForm {
   background-color: #FFF0E2;
-  box-shadow: 0px 4px 10px 7px rgba(231, 217, 204, 0.8);
+  box-shadow: 1px 4px 4px 4px rgba(94, 94, 94, 0.25);
   border-radius: 15px;
   color: #404040;
   width: 344px;
-  height: 540px;
+  height: 500px;
   max-width: 344px;
   position: static;
-  margin-top: 200px;
   margin-bottom: 100px;
   text-align: left;
   padding: 5px;
   margin: 0 auto;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
 } 
-/* Spara knapp */
+/* Skapa knapp i addForm*/
 .addInForm {
-  margin-left: 35%;
+  margin-left: 200px;
   background: #FF9D66;
   border-radius: 40px;
   font-family: Poppins;
   text-decoration: none;
   color: white;
-  box-shadow: 0px 4px 10px 7px rgba(231, 217, 204, 0.8);
+  box-shadow: none;
 }
 .formtext, .formtextarea {
   font-family: Poppins;
@@ -183,14 +190,26 @@ h2 {
   width: 298px;
   margin-left: 20px;
   margin-top: 5px;
+  border-color: transparent;
+  border: none;
 }
 .formtextarea {
   height: 144px;
 }
+.formtext, .formtextarea {
+  font-weight: 300!important;
+  font-size: 12px!important;
+  padding-left: 20px;
+}
 ::placeholder {
   font-family: Poppins;
+  color: #4040405C;
   font-size: 12px;
   line-height: 18px;
+  font-weight: 300;
+  padding-left: 60%;
+  
+  
 }
 
 .eventcard {
@@ -224,6 +243,8 @@ margin-left: 16px;
 
 /* Profil*/
 .profilecard {
+  display: flex;
+  justify-content: center;
   max-width: 298px;
   margin: 0 auto;
   text-align: left;
@@ -237,17 +258,41 @@ margin-left: 16px;
   margin-left: 93px;
 }
 
+.bio {
+  font-size: 14px;
+  font-weight: 300!important;
+}
+
 .name, .buddies {
   font-family: Poppins!important;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
+  font-style: normal;
   text-align: center!important;
 }
 .buddies {
   text-align: left!important;
 }
 
-.friends {
-  display: inline-flexbox;
+.nameforbuddies {
+  padding-left: 20px;
+  line-height: 27px;
+}
+
+/* Vänner vy */
+.myfriends {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  color: #404040;
 }
 

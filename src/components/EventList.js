@@ -45,6 +45,7 @@ export default function EventList() {
               <img src={activities} id="callogo" alt="Calendar SVG" />
               <br />
               <br />
+              <br />
               <h2>
                 Eller varför inte själv skapa en aktivitet att bjuda in dina
                 polers till!
