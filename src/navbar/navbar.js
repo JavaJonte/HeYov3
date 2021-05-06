@@ -22,7 +22,7 @@ const Navbar = () => {
   const isMobile = useMobile();
  
   return (
-    <nav1>
+    // <nav1>
       <section>
         <div style={styles}>
             <div><Link to="/friends"><img src={face} alt="friends" id="navbaricons" /></Link></div>
@@ -31,7 +31,7 @@ const Navbar = () => {
             <div><Link to="/profile"><img src={profile} alt="profile" id="navbaricons" /> </Link></div>
           </div>
       </section>
-    </nav1>
+    // </nav1>
   )
 }
  
