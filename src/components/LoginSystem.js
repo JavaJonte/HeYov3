@@ -1,6 +1,7 @@
 import Login from "./Login";
 import { useState} from "react";
 import fire from "../fire";
+import Hero from './Hero';
 
 const LoginSystem = ({ hasAccount, showLoginForm }) => {
   const [user, setUser] = useState("");
@@ -69,6 +70,9 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
 
   return (
     <div className="App">
+      {user ? (
+        <Hero handleLogout={handleLogout} />
+      ) : (
         <Login
           email={email}
           setEmail={setEmail}
@@ -81,6 +85,7 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
           passwordError={passwordError}
           handleLogout={handleLogout}
         />
+        )}
     </div>
   );
 };

@@ -47,8 +47,12 @@ button {
 }
 /*Inloggning/Registrerg sida*/
 .login .loginContainer {
-  padding: 60px;
-  margin: auto;
+  padding-top: 160px;
+  margin-top: 20%;
+  padding-left: 40px;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0 auto;
   width: 100%;
   max-width: 375px;
   min-height: 700px;
@@ -61,10 +65,15 @@ button {
 
 .login .loginContainer label {
   color: white;
-  margin: 14px 0;
   display: block;
-  font-size: 22px;
-  line-height: 1;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
 }
 
 .login .loginContainer input {
@@ -76,16 +85,27 @@ button {
   background: #FFFFFF;
   /* box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);  */
   border-radius: 11px;
+  border: none;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  padding-left: 16px;
+
 }
 
 .login .loginContainer .btnContainer {
   width: 100%;
-  padding: 24px 0;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .login .loginContainer .btnContainer p {
-  margin: 14px 0 0 0;
-  text-align: right;
+  margin: 0 0 0 0;
+  text-align: center;
   color: #fff;
 }
 
@@ -309,8 +329,10 @@ margin-left: 16px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  font-family: Poppins;
+
 }
 
 .title {

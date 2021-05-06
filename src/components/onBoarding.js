@@ -36,7 +36,7 @@ export const OnBoarding = () => {
                 <p>
                     Har du inget konto? <br/>
                     <span onClick={handleRegisterLogin}>
-                        Registrera dig!
+                        Registrera dig här!
                     </span>
                 </p>
                 {/* <div onClick={handleLogout}> 
@@ -49,6 +49,7 @@ export const OnBoarding = () => {
             <LoginSystem hasAccount={hasAccount} showLoginForm={hideLoginForm}/>
         }
         {showHero && <Hero handleLogout={handleLogout} />}
+        
     </>
     );
 }
