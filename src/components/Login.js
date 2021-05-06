@@ -37,11 +37,11 @@ const Login = (props) => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <p className="errorMsg">{passwordError}</p> 
-          <div onClick={hasAccount ? handleLogin : handleSignUp}> 
-            Go!
-          </div>
+          <button id="test" onClick={hasAccount ? handleLogin : handleSignUp}> Go!  </button>
+
         </Container>
       </section>
+
     </>
   );
 };
