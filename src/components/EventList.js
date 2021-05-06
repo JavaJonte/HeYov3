@@ -31,7 +31,7 @@ export default function EventList() {
         </Link>
           </Container>
         {eventList.length !== 0 ? (
-          eventList.map((event, index) => <Event event={event} key={index} />)
+          eventList.map((event, index)=> <Event event={event} key={index} />)
         ) : (
           //Om aktivitetskalender är tom, visa följande på sidan:
           <div className="emptyCalendar">
@@ -43,6 +43,7 @@ export default function EventList() {
               </h2>
               <br />
               <img src={activities} id="callogo" alt="Calendar SVG" />
+              <br />
               <br />
               <br />
               <h2>
