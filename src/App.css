@@ -20,16 +20,22 @@ button {
   color: white;
 }
 
-.loginbuttons {
-  display: flex;
-  color: #FF9D66;
-  border: none;
-  background: none;
-  font-family: Poppins!important;
+#test {
+  /* position: absolute; */
+  width: 28px;
+  height: 24px;
+  left: 3009px;
+  top: 548px;
+  background: transparent;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
   font-size: 16px;
+  line-height: 24px;
   display: flex;
   align-items: center;
   text-decoration-line: underline;
+  color: #FF9D66;
 }
 
 .login {
@@ -62,14 +68,14 @@ button {
 }
 
 .login .loginContainer input {
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 19px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  letter-spacing: 1px;
+  /* position: absolute; */
+  width: 298px;
+  height: 44px;
+  /* left: 39px; */
+  /* top: 400px; */
+  background: #FFFFFF;
+  /* box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);  */
+  border-radius: 11px;
 }
 
 .login .loginContainer .btnContainer {
