@@ -1,14 +1,13 @@
 import "./App.css";
-import LoginSystem from "./components/LoginSystem";
-import EventForm from './components/EventForm'
+import React from "react";
+import {OnBoarding} from "./components/onBoarding";
 
 function App() {
 
   return (
     <>
-  <LoginSystem />
-  </>
-
+    <OnBoarding />
+    </>
   );
 }
 
