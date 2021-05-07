@@ -6,8 +6,7 @@ import activities from './activities.svg';
 import profile from './profile.svg'
 import heyo from './heyo.svg'
 import {useMobile} from '../components/useMobile';
-import EventList from "../components/EventList";
-import EventForm from "../components/EventForm";
+
  
 const styles = {  
     background: "#FFF0E2",
