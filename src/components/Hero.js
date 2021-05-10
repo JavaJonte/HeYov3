@@ -2,6 +2,7 @@ import React from "react";
 import { useMobile } from "./useMobile";
 import Navbar from "../navbar/navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Nav, Container } from "react-bootstrap"
 import EventList from "./EventList";
 import EventForm from "./EventForm";
 import Profile from "./Profile";
@@ -35,7 +36,7 @@ const Hero = ({ handleLogout }) => {
                 </Route>
             </Switch>
  
-        </Router>
+        </Nav>
     );
 };
 export default Hero
