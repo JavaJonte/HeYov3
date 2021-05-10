@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import { useMobile } from "./useMobile";
 import Navbar from "../navbar/navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -29,14 +30,15 @@ const Hero = ({ handleLogout }) => {
                     <EventForm />
                 </Route>
                 <Route path="/profile">
-                    <Profile handleLogout={handleLogout}/>
+                    <Profile />
                 </Route>
                 <Route path="/friends">
                     <Friends />
                 </Route>
             </Switch>
  
-        </Nav>
+            <Button onClick={handleLogout}>Logga ut</Button>
+        </Router>
     );
 };
 export default Hero
