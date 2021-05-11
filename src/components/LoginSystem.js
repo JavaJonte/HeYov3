@@ -4,7 +4,7 @@ import fire from "../fire";
 import Hero from './Hero';
 
 const LoginSystem = ({ hasAccount, showLoginForm }) => {
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState(localStorage.getItem('user'));
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
@@ -26,7 +26,8 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
     fire
       .auth()
       .signInWithEmailAndPassword(email, password).then((token)=>{
-        setUser("true");
+        setUser(true);
+        localStorage.setItem('user');
         showLoginForm();
       })
       .catch((err) => {
@@ -65,7 +66,8 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
   };
 
   const handleLogout = () => {
-    fire.auth().signOut();
+    localStorage.removeItem('user');
+    // fire.auth().signOut();
   };
 
   return (
