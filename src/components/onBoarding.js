@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { Container, Button } from "react-bootstrap"
 import LoginSystem from "./LoginSystem";
 import fire from "../fire";
-import Hero from "./Hero"
+import Hero from "./Hero";
 
 export const OnBoarding = () => {
     const [hasAccount, setHasAccount] = useState(false);
@@ -21,7 +21,7 @@ export const OnBoarding = () => {
 
     const handleLogout = () => {
         fire.auth().signOut();
-      };
+    };
 
     const hideLoginForm = () => {
         setShowLoginForm(false);
