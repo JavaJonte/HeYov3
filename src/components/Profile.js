@@ -6,6 +6,7 @@ import johnny from '../profileicons/johnny.svg';
 import ronny from '../profileicons/ronny.svg';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 export default function Profile({ handleLogout }) {
@@ -14,6 +15,8 @@ export default function Profile({ handleLogout }) {
   
         </div>
     )
+=======
+>>>>>>> main
 =======
 >>>>>>> main
 
@@ -32,19 +35,33 @@ export default function Profile({handleLogout}) {
                             dig!
                         </Card.Subtitle>
                         <Card.Text className="buddies">Hänger ofta med</Card.Text>
-                        <div><Link to="/Johnny"><img src={johnny}alt="Johnny" /></Link><span class="nameforbuddies">Johnny the Trucker</span></div>
-                        <div><Link to="/Ronny"><img src={ronny} alt="Ronny"/></Link><span class="nameforbuddies">Ronny Booster</span></div>
+                        <figure className="nameforbuddies">
+                            <Link to="/Johnny">
+                            <img src={johnny} alt="Johnny" />
+                            </Link>
+                            <span className="buddyname">Johnny the Trucker</span>
+                        </figure>
+                        <figure className="nameforbuddies">
+                            <Link to="/Ronny">
+                            <img src={ronny} alt="Ronny" />
+                            </Link>
+                            <span className="buddyname">Ronny Booster</span>
+                        </figure>
+
                     </Card.Body>
                     </Card>   
                 </div>
                 
         <div>
-            <Button onClick={handleLogout}>Logga ut</Button>
+            <Button handleLogout={handleLogout}>Logga ut</Button>
         </div>
     </>
   );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 1a03aba803d64acae99920e954b9ddabf8b31f98
+>>>>>>> main
+=======
 >>>>>>> main
 }

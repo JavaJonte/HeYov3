@@ -9,13 +9,28 @@ import EventForm from "./EventForm";
 import Profile from "./Profile";
 import Friends from "./Friends";
 import Activities from "./Activities";
- 
+import Johnny from "../profiles/Johnny";
+
 const Hero = ({ handleLogout }) => {
+<<<<<<< HEAD
   return (
       <Nav>
         <Container className="logo-container">
           <h1 className="logo">HEYO!</h1>
         </Container>
+=======
+    const isMobile = useMobile();
+    
+ 
+    return (
+        <Router>
+            {!isMobile && <Navbar />}
+            {isMobile && (
+                <div style={{ position: "fixed", bottom: "0px", width: "100%" }} >
+                    <Navbar />{" "}
+                </div>
+            )}
+>>>>>>> main
 
             {/*Här finns Routes till de olika komponenter*/}
             <Switch>
@@ -35,9 +50,12 @@ const Hero = ({ handleLogout }) => {
                 <Route path="/friends">
                     <Friends />
                 </Route>
+                <Route path="/Johnny">
+                    <Johnny />
+                </Route>
             </Switch>
  
-            <Button onClick={handleLogout}>Logga ut</Button>
+            <Button variant="link" onClick={handleLogout}>Logga ut</Button>
         </Router>
     );
 };
