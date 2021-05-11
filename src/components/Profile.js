@@ -5,14 +5,6 @@ import manne from '../profileicons/manne.svg';
 import johnny from '../profileicons/johnny.svg';
 import ronny from '../profileicons/ronny.svg';
 
-<<<<<<< HEAD
-export default function Profile({ handleLogout }) {
-    return (
-        <div>
-  
-        </div>
-    )
-=======
 
 export default function Profile({handleLogout}) {
   return (
@@ -40,5 +32,4 @@ export default function Profile({handleLogout}) {
         </div>
     </>
   );
->>>>>>> 1a03aba803d64acae99920e954b9ddabf8b31f98
 }

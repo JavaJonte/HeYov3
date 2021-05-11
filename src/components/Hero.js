@@ -8,9 +8,12 @@ import EventForm from "./EventForm";
 import Profile from "./Profile";
 import Friends from "./Friends";
 import Activities from "./Activities";
+import fire from '../fire'
+
  
 const Hero = ({ handleLogout }) => {
     const isMobile = useMobile();
+    
  
     return (
         <Router>
@@ -41,7 +44,7 @@ const Hero = ({ handleLogout }) => {
                 </Route>
             </Switch>
  
-            <Button onClick={handleLogout}>Logga ut</Button>
+            <Button variant="link" onClick={handleLogout}>Logga ut</Button>
         </Router>
     );
 };
