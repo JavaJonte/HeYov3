@@ -1,7 +1,7 @@
 import Login from "./Login";
-import { useState} from "react";
+import { useState } from "react";
 import fire from "../fire";
-import Hero from './Hero';
+import Hero from "./Hero";
 
 const LoginSystem = ({ hasAccount, showLoginForm }) => {
   const [user, setUser] = useState("");
@@ -22,10 +22,11 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
 
   const handleLogin = () => {
     clearErrors();
-    console.log(password, email)
+    console.log(password, email);
     fire
       .auth()
-      .signInWithEmailAndPassword(email, password).then((token)=>{
+      .signInWithEmailAndPassword(email, password)
+      .then((token) => {
         setUser("true");
         showLoginForm();
       })
@@ -47,7 +48,8 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
     clearErrors();
     fire
       .auth()
-      .createUserWithEmailAndPassword(email, password).then((token)=>{
+      .createUserWithEmailAndPassword(email, password)
+      .then((token) => {
         setUser("true");
         showLoginForm();
       })
@@ -85,7 +87,7 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
           passwordError={passwordError}
           handleLogout={handleLogout}
         />
-        )}
+      )}
     </div>
   );
 };
