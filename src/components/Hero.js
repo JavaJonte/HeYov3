@@ -8,9 +8,8 @@ import EventForm from "./EventForm";
 import Profile from "./Profile";
 import Friends from "./Friends";
 import Activities from "./Activities";
-import fire from '../fire'
+import Johnny from "../profiles/Johnny";
 
- 
 const Hero = ({ handleLogout }) => {
     const isMobile = useMobile();
     
@@ -41,6 +40,9 @@ const Hero = ({ handleLogout }) => {
                 </Route>
                 <Route path="/friends">
                     <Friends />
+                </Route>
+                <Route path="/Johnny">
+                    <Johnny />
                 </Route>
             </Switch>
  

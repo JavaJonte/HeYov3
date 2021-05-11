@@ -292,20 +292,17 @@ margin-left: 16px;
   margin: 0 auto;
   text-align: left;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   font-family: Poppins;
 }
-
 .img {
   margin-bottom: -20px;
   margin-left: 93px;
 }
-
 .bio {
   font-size: 14px;
   font-weight: 300!important;
 }
-
 .name, .buddies {
   font-family: Poppins!important;
   font-size: 24px;
@@ -316,13 +313,17 @@ margin-left: 16px;
 .buddies {
   text-align: left!important;
 }
-
 .nameforbuddies {
-  padding-left: 20px;
-  line-height: 27px;
+  text-align: left;
+}
+.buddyname {
+  position: absolute;
+  padding: 0 1em;
+  line-height: 60px;
 }
 
-/* Vänner vy */
+
+/* Mina vänner*/
 .myfriends {
   display: flex;
   flex-direction: row;
@@ -332,12 +333,26 @@ margin-left: 16px;
   font-family: Poppins;
 
 }
-
 .title {
   font-family: Poppins;
   font-size: 24px;
   font-weight: 500;
   font-style: normal;
   color: #404040;
+}
+figure {
+  text-align: center;
+  margin: 0.5em;
+}
+.othercontacticons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+.addfriend {
+  background: none;
 }
 
