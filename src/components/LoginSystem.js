@@ -1,10 +1,8 @@
-import Login from "./Login";
-import { useState} from "react";
+import { useState } from "react";
 import fire from "../fire";
-import Hero from './Hero';
+import Login from "./Login";
 
 const LoginSystem = ({ hasAccount, showLoginForm }) => {
-  const [user, setUser] = useState(localStorage.getItem('user'));
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
@@ -26,8 +24,7 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
     fire
       .auth()
       .signInWithEmailAndPassword(email, password).then((token)=>{
-        setUser(true);
-        localStorage.setItem('user');
+        localStorage.setItem('user', "true");
         showLoginForm();
       })
       .catch((err) => {
@@ -49,7 +46,7 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
     fire
       .auth()
       .createUserWithEmailAndPassword(email, password).then((token)=>{
-        setUser("true");
+        localStorage.setItem("user", "true");
         showLoginForm();
       })
       .catch((err) => {
@@ -65,16 +62,9 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
       });
   };
 
-  const handleLogout = () => {
-    localStorage.removeItem('user');
-    // fire.auth().signOut();
-  };
 
   return (
     <div className="App">
-      {user ? (
-        <Hero handleLogout={handleLogout} />
-      ) : (
         <Login
           email={email}
           setEmail={setEmail}
@@ -85,9 +75,7 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
           hasAccount={hasAccount}
           emailError={emailError}
           passwordError={passwordError}
-          handleLogout={handleLogout}
         />
-        )}
     </div>
   );
 };
