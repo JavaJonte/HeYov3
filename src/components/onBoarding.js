@@ -28,6 +28,7 @@ export const OnBoarding = () => {
         window.location.href="/";
       };
 
+
     const hideLoginForm = () => {
         setShowLoginForm(false);
         setOnBoarding(false);
