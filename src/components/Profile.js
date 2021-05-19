@@ -40,10 +40,10 @@ export default function Profile({ handleLogout }) {
           </Card.Body>
         </Card>
       </div>
-
-      <div>
-        <Button handleLogout={handleLogout}>Logga ut</Button>
-      </div>
+                
+        <div>
+            <Button onClick={handleLogout}>Logga ut</Button>
+        </div>
     </>
   );
 }
