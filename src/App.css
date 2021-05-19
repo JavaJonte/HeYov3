@@ -6,6 +6,7 @@
 
 /*Knapp för Logga in/Registrera/Logga ut*/
 button {
+  width: 176px;
   background: #FF9D66;
   border-radius: 40px;
   text-decoration: none;
@@ -18,6 +19,7 @@ button {
   letter-spacing: 0.09em;
   text-decoration: none;
   color: white;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
 }
 
 #test {
@@ -97,14 +99,30 @@ button {
 .login .loginContainer .btnContainer {
   width: 100%;
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 115px;
   margin-bottom: 50px;
+  padding-right: 50px;
 }
 
 .login .loginContainer .btnContainer p {
-  margin: 0 0 0 0;
-  text-align: center;
-  color: #fff;
+  /* width: 155px; */
+  height: 48px;
+  /* left: 110px; */
+  /* top: 488px; */
+  font-family: Poppins;
+  /* font-style: normal; */
+  /* font-weight: 300; */
+  font-size: 14px;
+  /* line-height: 24px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* text-align: center; */
+  color: #FFFFFF;
+  /* flex-direction: column; */
+  /* flex-wrap: unset; */
+  /* justify-content: end; */
+  /* inline-size: auto; */
+  margin: 70px;
 }
 
 .login .loginContainer .btnContainer p span {
