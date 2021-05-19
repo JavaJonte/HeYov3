@@ -12,7 +12,7 @@ export default function Profile({handleLogout}) {
             <div className="profilecard">
                 <Card>
                     <Card.Body>
-                        <Card.Title className="title">Profill</Card.Title>
+                        <Card.Title className="title">Profil</Card.Title>
                         <Card.Img className="img" variant="top" src={manne} alt="Manne profile icon" />
                         <Card.Text className="name">Manne 36</Card.Text>
                         <Card.Subtitle className="bio">
