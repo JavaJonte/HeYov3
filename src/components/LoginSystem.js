@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-import Login from "./Login";
-import { useState } from "react";
-import fire from "../fire";
-import Hero from "./Hero";
-=======
 import { useState } from "react";
 import fire from "../fire";
 import Login from "./Login";
->>>>>>> Tobbe
 
 const LoginSystem = ({ hasAccount, showLoginForm }) => {
   const [email, setEmail] = useState("");
@@ -30,14 +23,8 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
     console.log(password, email);
     fire
       .auth()
-<<<<<<< HEAD
-      .signInWithEmailAndPassword(email, password)
-      .then((token) => {
-        setUser("true");
-=======
       .signInWithEmailAndPassword(email, password).then((token)=>{
         localStorage.setItem('user', "true");
->>>>>>> Tobbe
         showLoginForm();
       })
       .catch((err) => {
@@ -58,14 +45,8 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
     clearErrors();
     fire
       .auth()
-<<<<<<< HEAD
-      .createUserWithEmailAndPassword(email, password)
-      .then((token) => {
-        setUser("true");
-=======
       .createUserWithEmailAndPassword(email, password).then((token)=>{
         localStorage.setItem("user", "true");
->>>>>>> Tobbe
         showLoginForm();
       })
       .catch((err) => {
@@ -95,10 +76,6 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
           emailError={emailError}
           passwordError={passwordError}
         />
-<<<<<<< HEAD
-      )}
-=======
->>>>>>> Tobbe
     </div>
   );
 };
