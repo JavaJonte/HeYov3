@@ -24,12 +24,14 @@ export default function EventList() {
 
   return (
     <>
-      <div>
+      <div className="webcontext">
+          <Container>
         <Link to="/addevent" id="addButton">
           Skapa aktivitet +
         </Link>
+          </Container>
         {eventList.length !== 0 ? (
-          eventList.map((event, index) => <Event event={event} key={index} />)
+          eventList.map((event, index)=> <Event event={event} key={index} />)
         ) : (
           //Om aktivitetskalender är tom, visa följande på sidan:
           <div className="emptyCalendar">
