@@ -1,55 +1,58 @@
-import React, { useState} from "react";
-import { Container, Button } from "react-bootstrap"
+import React, { useState } from "react";
+import { Container, Button } from "react-bootstrap";
 import LoginSystem from "./LoginSystem";
 import fire from "../fire";
 import Hero from "./Hero";
 
 export const OnBoarding = () => {
-    const [hasAccount, setHasAccount] = useState(false);
-    const [showLoginForm, setShowLoginForm] = useState(false);
-    const [showHero, setShowHero] = useState(false);
+  const [hasAccount, setHasAccount] = useState(false);
+  const [showLoginForm, setShowLoginForm] = useState(false);
+  const [showHero, setShowHero] = useState(false);
 
-    const handleLogin = () => {
-        setHasAccount(true);
-        setShowLoginForm(true);
-    };
-    
-    const handleRegisterLogin = () => {
-        setHasAccount(false);
-        setShowLoginForm(true);
-    }
+  const handleLogin = () => {
+    setHasAccount(true);
+    setShowLoginForm(true);
+  };
 
-    const handleLogout = () => {
-        fire.auth().signOut();
-    };
+  const handleRegisterLogin = () => {
+    setHasAccount(false);
+    setShowLoginForm(true);
+  };
 
-    const hideLoginForm = () => {
-        setShowLoginForm(false);
-        setShowHero(true);
-    }
-    return (
+  async function handleLogout () {
+    const currentUser = Auth.userPool.getCurrentUser();
+    await currentUser.signOut();
+    console.log("denna?");
+  };
+
+  const hideLoginForm = () => {
+    setShowLoginForm(false);
+    setShowHero(true);
+  };
+  return (
     <>
-        {!showHero && <section className="login">
-        <Container className="loginContainer">
+      {!showHero && (
+        <section className="login">
+          <Container className="loginContainer">
             <Container className="btnContainer">
-                <Button onClick={handleLogin}>&nbsp;&nbsp;&nbsp;LOGGA IN&nbsp;&nbsp;&nbsp;</Button>
-                <p>
-                    Har du inget konto? <br/>
-                    <span onClick={handleRegisterLogin}>
-                        Registrera dig här!
-                    </span>
-                </p>
-                {/* <div onClick={handleLogout}> 
+              <Button onClick={handleLogin}>
+                &nbsp;&nbsp;&nbsp;LOGGA IN&nbsp;&nbsp;&nbsp;
+              </Button>
+              <p>
+                Har du inget konto? <br />
+                <span onClick={handleRegisterLogin}>Registrera dig här!</span>
+              </p>
+              {/* <div onClick={handleLogout}> 
             Logout
           </div> */}
             </Container>
-        </Container>
-        </section>}
-        { showLoginForm &&
-            <LoginSystem hasAccount={hasAccount} showLoginForm={hideLoginForm}/>
-        }
-        {showHero && <Hero handleLogout={handleLogout} />}
-        
+          </Container>
+        </section>
+      )}
+      {showLoginForm && (
+        <LoginSystem hasAccount={hasAccount} showLoginForm={hideLoginForm} />
+      )}
+      {showHero && <Hero handleLogout={handleLogout} />}
     </>
-    );
-}
+  );
+};
