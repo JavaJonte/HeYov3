@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import fire from "../fire";
 import firebase from "../fire";
 
 export default function EventForm() {
