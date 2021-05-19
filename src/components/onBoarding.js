@@ -50,13 +50,13 @@ export const OnBoarding = () => {
                     </span>
                 </p>
             </Container>
-        </Container>
-        </section>}
-        { showLoginForm &&
-            <LoginSystem hasAccount={hasAccount} showLoginForm={hideLoginForm}/>
-        }
-        {showHero && <Hero handleLogout={handleLogout} />}
-        
+          </Container>
+        </section>
+      }
+      {showLoginForm && (
+        <LoginSystem hasAccount={hasAccount} showLoginForm={hideLoginForm} />
+      )}
+      {showHero && <Hero handleLogout={handleLogout} />}
     </>
-    );
-}
+  );
+};
