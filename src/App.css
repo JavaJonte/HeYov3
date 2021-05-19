@@ -19,7 +19,7 @@ button {
   letter-spacing: 0.09em;
   text-decoration: none;
   color: white;
-  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  /*filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));*/
 }
 
 #test {
@@ -201,7 +201,7 @@ h2 {
   color: white;
   padding: 5px;
   box-shadow: none;
-  
+  width: 334px;
 }
 
 /* Formulär att skapa ny event*/
@@ -225,7 +225,7 @@ h2 {
 } 
 /* Skapa knapp i addForm*/
 .addInForm {
-  margin-left: 200px;
+  margin-left: 43%;
   background: #FF9D66;
   border-radius: 40px;
   font-family: Poppins;
@@ -365,10 +365,10 @@ figure {
 .othercontacticons {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20px;
+  justify-content:space-between;
+  margin-top: 20px;
+  margin-left: 33%;
+  width: 47px;
 }
 .addfriend {
   background: none;
