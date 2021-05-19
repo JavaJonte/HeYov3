@@ -25,7 +25,7 @@ export const OnBoarding = () => {
     const handleLogout = () => {
         fire.auth().signOut();
         window.localStorage.removeItem("user");
-        window.location.href="/";
+        window.location.href="/";               //testtest
       };
 
     const hideLoginForm = () => {
