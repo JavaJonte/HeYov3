@@ -39,7 +39,7 @@ export default function Profile({handleLogout}) {
                 </div>
                 
         <div>
-            <Button handleLogout={handleLogout}>Logga ut</Button>
+            <Button onClick={handleLogout}>Logga ut</Button>
         </div>
     </>
   );
