@@ -1,8 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-
-
 const Login = (props) => {
   const {
     email,
@@ -36,6 +34,7 @@ const Login = (props) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+
           <p className="errorMsg">{passwordError}</p> 
           <button id="test" onClick={hasAccount ? handleLogin : handleSignUp}> Go!  </button>
 
