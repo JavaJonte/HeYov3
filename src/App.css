@@ -46,11 +46,11 @@ button {
   padding: 0 20px;
   display: flex;
 }
-/*Inloggning/Registrerg sida*/
+/*Inloggning/Registrering sida*/
 .login .loginContainer {
   padding-top: 160px;
   margin-top: 20%;
-  padding-left: 40px;
+  padding-left: 45px;
   font-style: normal;
   font-weight: 300;
   margin: 0 auto;
@@ -93,7 +93,18 @@ button {
   font-weight: 300;
   font-size: 16px;
   padding-left: 16px;
+}
 
+.heyo {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 200px;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  font-family: Ranchers;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
 }
 
 .login .loginContainer .btnContainer {
@@ -138,9 +149,15 @@ button {
   color: red;
 }
 
-.login .loginContainer .errorMsg {
+.login .loginContainer {
   color: red;
   font-size: 16px;
+}
+.errorMsg {
+  color: red;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Navbar */
