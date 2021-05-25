@@ -13,7 +13,6 @@ export default function Friends() {
     return (
       <Container>
         <Card.Text className="title">Mina vänner</Card.Text>
-
         <div className="myfriends">
           <figure>
             <Link to="/Johnny">
