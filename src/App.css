@@ -4,7 +4,7 @@
   color:#404040;
 }
 
-/*Knapp för Logga in/Registrera/Logga ut*/
+/*Knapp för Logga in/Registrera/Logga ut/Ta bort*/
 button {
   width: 176px;
   background: #FF9D66;
@@ -282,12 +282,6 @@ h2 {
   font-weight: 300;
   padding-left: 60%;
 }
-.deleteButton {
-  display: flex;
-  justify-content: center;
-  margin-left: 16px;
-  margin-top: 20px;
-}
 
 /*Event kort */
 .eventcard {
@@ -296,7 +290,7 @@ h2 {
   border-radius: 15px;
   color: #404040;
   width: 344px;
-  height: 250px;
+  height: 412px;
   max-width: 400px;
   position: static;
   margin-bottom: 100px;
@@ -317,6 +311,16 @@ h3 {
 font-family: Poppins;
 font-size: 12px;
 margin-left: 16px;
+}
+.deleteButton {
+  text-align: right;
+  margin-left: 265px;
+  margin-top: 25px;
+  width: 50px;
+  background:none;
+  cursor: pointer;
+  border-color: transparent;
+  box-shadow: none;
 }
 
 /* Profil*/
@@ -357,7 +361,6 @@ margin-left: 16px;
   line-height: 60px;
 }
 
-
 /* Mina vänner*/
 .myfriends {
   display: flex;
@@ -390,4 +393,14 @@ figure {
 .addfriend {
   background: none;
 }
- 
+
+/* I eventkortet*/
+.deltagare {
+  text-align: left;
+  padding-left: 7px;
+}
+.addtocalendar {
+  text-align: right;
+  background: transparent;
+  padding-left: 270px;
+}
