@@ -59,7 +59,7 @@ export default function EventForm() {
       />
       <br />
       <br />
-      &nbsp; &nbsp; &nbsp;Välj tid
+      &nbsp; &nbsp; &nbsp; Välj tid
       <br />
       <input
         className="formtext"

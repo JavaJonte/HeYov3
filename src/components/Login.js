@@ -36,7 +36,7 @@ const Login = (props) => {
           />
 
           <p className="errorMsg">{passwordError}</p> 
-          <button id="test" onClick={hasAccount ? handleLogin : handleSignUp}> Go!  </button>
+          <button onClick={hasAccount ? handleLogin : handleSignUp}> Go!  </button>
 
         </Container>
       </section>
