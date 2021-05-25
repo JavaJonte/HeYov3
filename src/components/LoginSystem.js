@@ -20,7 +20,7 @@ const LoginSystem = ({ hasAccount, showLoginForm }) => {
 
   const handleLogin = () => {
     clearErrors();
-    console.log(password, email)
+    console.log(password, email);
     fire
       .auth()
       .signInWithEmailAndPassword(email, password).then((token)=>{

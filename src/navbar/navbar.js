@@ -9,10 +9,10 @@ import {useMobile} from '../components/useMobile';
 
  
 const styles = {  
+    margin: "-10px",
     background: "#FFF0E2",
-    padding: "15px",
-    width: "100%",
-    boxShadow: "0px 4px 10px 7px rgba(231, 217, 204, 0.8)",
+    padding: "10px",
+    width: "101%",
     borderRadius: "15px",
     display: "flex",
     justifyContent: "space-around",
@@ -22,7 +22,6 @@ const Navbar = () => {
   const isMobile = useMobile();
  
   return (
-    // <nav1>
       <section>
         <div style={styles}>
             <div><Link to="/friends"><img src={face} alt="friends" id="navbaricons" /></Link></div>
@@ -32,7 +31,6 @@ const Navbar = () => {
             <div><Link to="/profile"><img src={profile} alt="profile" id="navbaricons" /> </Link></div>
           </div>
       </section>
-    // </nav1>
   )
 }
  

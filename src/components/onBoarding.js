@@ -28,6 +28,7 @@ export const OnBoarding = () => {
         window.location.href="/";               //testtest
       };
 
+
     const hideLoginForm = () => {
         setShowLoginForm(false);
         setOnBoarding(false);
@@ -41,6 +42,7 @@ export const OnBoarding = () => {
         {showOnBoarding && isLogin!="true" && <section className="login">
         <Container className="loginContainer">
             <Container className="btnContainer">
+                <div className="heyo">HEYO!</div>
                 <Button onClick={handleLogin}>&nbsp;&nbsp;&nbsp;LOGGA IN&nbsp;&nbsp;&nbsp;</Button>
                 <p>
                     Har du inget konto? <br/>
@@ -49,13 +51,13 @@ export const OnBoarding = () => {
                     </span>
                 </p>
             </Container>
-        </Container>
-        </section>}
-        { showLoginForm &&
-            <LoginSystem hasAccount={hasAccount} showLoginForm={hideLoginForm}/>
-        }
-        {showHero && <Hero handleLogout={handleLogout} />}
-        
+          </Container>
+        </section>
+      }
+      {showLoginForm && (
+        <LoginSystem hasAccount={hasAccount} showLoginForm={hideLoginForm} />
+      )}
+      {showHero && <Hero handleLogout={handleLogout} />}
     </>
-    );
-}
+  );
+};
