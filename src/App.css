@@ -4,7 +4,7 @@
   color:#404040;
 }
 
-/*Knapp för Logga in/Registrera/Logga ut*/
+/*Knapp för Logga in/Registrera/Logga ut/Ta bort*/
 button {
   width: 176px;
   background: #FF9D66;
@@ -46,11 +46,11 @@ button {
   padding: 0 20px;
   display: flex;
 }
-/*Inloggning/Registrerg sida*/
+/*Inloggning/Registrering sida*/
 .login .loginContainer {
   padding-top: 160px;
   margin-top: 20%;
-  padding-left: 40px;
+  padding-left: 45px;
   font-style: normal;
   font-weight: 300;
   margin: 0 auto;
@@ -93,7 +93,18 @@ button {
   font-weight: 300;
   font-size: 16px;
   padding-left: 16px;
+}
 
+.heyo {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 200px;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  font-family: Ranchers;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
 }
 
 .login .loginContainer .btnContainer {
@@ -138,9 +149,15 @@ button {
   color: red;
 }
 
-.login .loginContainer .errorMsg {
+.login .loginContainer {
   color: red;
   font-size: 16px;
+}
+.errorMsg {
+  color: red;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Navbar */
@@ -265,12 +282,6 @@ h2 {
   font-weight: 300;
   padding-left: 60%;
 }
-.deleteButton {
-  display: flex;
-  justify-content: center;
-  margin-left: 16px;
-  margin-top: 20px;
-}
 
 /*Event kort */
 .eventcard {
@@ -279,7 +290,7 @@ h2 {
   border-radius: 15px;
   color: #404040;
   width: 344px;
-  height: 250px;
+  height: 412px;
   max-width: 400px;
   position: static;
   margin-bottom: 100px;
@@ -300,6 +311,16 @@ h3 {
 font-family: Poppins;
 font-size: 12px;
 margin-left: 16px;
+}
+.deleteButton {
+  text-align: right;
+  margin-left: 265px;
+  margin-top: 25px;
+  width: 50px;
+  background:none;
+  cursor: pointer;
+  border-color: transparent;
+  box-shadow: none;
 }
 
 /* Profil*/
@@ -340,7 +361,6 @@ margin-left: 16px;
   line-height: 60px;
 }
 
-
 /* Mina vänner*/
 .myfriends {
   display: flex;
@@ -365,7 +385,7 @@ figure {
 .othercontacticons {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-top: 20px;
   margin-left: 33%;
   width: 47px;
@@ -374,3 +394,13 @@ figure {
   background: none;
 }
 
+/* I eventkortet*/
+.deltagare {
+  text-align: left;
+  padding-left: 7px;
+}
+.addtocalendar {
+  text-align: right;
+  background: transparent;
+  padding-left: 270px;
+}

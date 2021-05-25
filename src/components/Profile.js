@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 import { Button, Card } from "react-bootstrap";
-import {BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom' //De importerer behövs för att Routing ska fungera
-import manne from '../profileicons/manne.svg';
-import johnny from '../profileicons/johnny.svg';
-import ronny from '../profileicons/ronny.svg';
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom"; //De importerer behövs för att Routing ska fungera
+import manne from "../profileicons/manne.svg";
+import johnny from "../profileicons/johnny.svg";
+import ronny from "../profileicons/ronny.svg";
 
-
-export default function Profile({handleLogout}) {
+export default function Profile({ handleLogout }) {
   return (
       <>
             <div className="profilecard">
@@ -39,7 +38,7 @@ export default function Profile({handleLogout}) {
                 </div>
                 
         <div>
-            <Button handleLogout={handleLogout}>Logga ut</Button>
+            <Button onClick={handleLogout}>Logga ut</Button>
         </div>
     </>
   );

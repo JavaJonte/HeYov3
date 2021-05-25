@@ -6,8 +6,14 @@ import EventList from "./EventList";
 import EventForm from "./EventForm";
 import Profile from "./Profile";
 import Friends from "./Friends";
-import Activities from "./Activities";
+import Calendar from "./Calendar";
 import Johnny from "../profiles/Johnny";
+import Ronny from "../profiles/Ronny";
+import Rocky from "../profiles/Rocky";
+import Lenny from "../profiles/Lenny";
+import Sonny from "../profiles/Sonny";
+import Kenny from "../profiles/Kenny";
+import Jeff from "../profiles/Jeff";
 
 const Hero = ({ handleLogout }) => {
     const isMobile = useMobile();
@@ -23,12 +29,14 @@ const Hero = ({ handleLogout }) => {
 
             {/*Här finns Routes till de olika komponenter*/}
             <Switch>
-                {/*TODO: Lägga in route för path"/" alltså hemsida*/}
+                <Route exact path="/">
+                    <EventList/>
+                </Route>
                 <Route path="/activities">
-                    <Activities />
+                    <EventList />
                 </Route>
                 <Route path="/calender">
-                    <EventList />
+                    <Calendar />
                 </Route>
                 <Route path="/addevent">
                     <EventForm />
@@ -41,6 +49,24 @@ const Hero = ({ handleLogout }) => {
                 </Route>
                 <Route path="/Johnny">
                     <Johnny />
+                </Route>
+                <Route path="/Ronny">
+                    <Ronny />
+                </Route>
+                <Route path="/Rocky">
+                    <Rocky />
+                </Route>
+                <Route path="/Lenny">
+                    <Lenny />
+                </Route>
+                <Route path="/Sonny">
+                    <Sonny />
+                </Route>
+                <Route path="/Kenny">
+                    <Kenny />
+                </Route>
+                <Route path="/Jeff">
+                    <Jeff />
                 </Route>
             </Switch>
  
