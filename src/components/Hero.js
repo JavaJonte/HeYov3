@@ -6,7 +6,7 @@ import EventList from "./EventList";
 import EventForm from "./EventForm";
 import Profile from "./Profile";
 import Friends from "./Friends";
-import Activities from "./Activities";
+import Calendar from "./Calendar";
 import Johnny from "../profiles/Johnny";
 import Ronny from "../profiles/Ronny";
 import Rocky from "../profiles/Rocky";
@@ -30,13 +30,13 @@ const Hero = ({ handleLogout }) => {
             {/*Här finns Routes till de olika komponenter*/}
             <Switch>
                 <Route exact path="/">
-                    <EventList />
+                    <EventList/>
                 </Route>
                 <Route path="/activities">
-                    <Activities />
+                    <EventList />
                 </Route>
                 <Route path="/calender">
-                    <EventList />
+                    <Calendar />
                 </Route>
                 <Route path="/addevent">
                     <EventForm />
