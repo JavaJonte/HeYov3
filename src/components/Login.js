@@ -40,7 +40,6 @@ const Login = (props) => {
 
         </Container>
       </section>
-
     </>
   );
 };

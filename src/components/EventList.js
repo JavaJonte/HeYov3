@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom' //De importerer behövs för att Routing ska fungera
+import {BrowserRouter as Router, Link, Switch, Route, useHistory } from 'react-router-dom' //De importerer behövs för att Routing ska fungera
 import firebase from "../fire";
 import Event from "./Event";
 import Container from "react-bootstrap/Container";
@@ -13,6 +13,7 @@ import { Card} from "react-bootstrap";
 
 export default function EventList() {
   const [eventList, setEventList] = useState([]);
+  const history = useHistory();
 
   useEffect(() => {
     const eventRef = firebase.database().ref("Event");
@@ -92,7 +93,9 @@ export default function EventList() {
           </Link>
       </figure>
           <br/>
-      <button className="addtocalendar" onClick>
+      <button className="addtocalendar" onClick={ () => {
+          history.push("/calender/1");
+      } }>
             <img src={addtocalendar} alt="Add event to your calender" />
       </button>
     </div>

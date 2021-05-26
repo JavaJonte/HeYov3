@@ -35,7 +35,7 @@ const Hero = ({ handleLogout }) => {
                 <Route path="/activities">
                     <EventList />
                 </Route>
-                <Route path="/calender">
+                <Route path="/calender/:user?">
                     <Calendar />
                 </Route>
                 <Route path="/addevent">

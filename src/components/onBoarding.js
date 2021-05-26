@@ -25,7 +25,7 @@ export const OnBoarding = () => {
     const handleLogout = () => {
         fire.auth().signOut();
         window.localStorage.removeItem("user");
-        window.location.href="/";
+        window.location.href="/";               //testtest
       };
 
 
@@ -51,13 +51,13 @@ export const OnBoarding = () => {
                     </span>
                 </p>
             </Container>
-        </Container>
-        </section>}
-        { showLoginForm &&
-            <LoginSystem hasAccount={hasAccount} showLoginForm={hideLoginForm}/>
-        }
-        {showHero && <Hero handleLogout={handleLogout} />}
-        
+          </Container>
+        </section>
+      }
+      {showLoginForm && (
+        <LoginSystem hasAccount={hasAccount} showLoginForm={hideLoginForm} />
+      )}
+      {showHero && <Hero handleLogout={handleLogout} />}
     </>
-    );
-}
+  );
+};
