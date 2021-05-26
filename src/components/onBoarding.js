@@ -51,6 +51,7 @@ export const OnBoarding = () => {
                     </span>
                 </p>
             </Container>
+            
           </Container>
         </section>
       }
