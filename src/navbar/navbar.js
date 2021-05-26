@@ -27,7 +27,7 @@ const Navbar = () => {
             <div><Link to="/friends"><img src={face} alt="friends" id="navbaricons" /></Link></div>
             <div><Link to="/activities"><img src={activities} alt="activities" id="navbaricons" /></Link></div>
             {!isMobile && <div><img src={heyo} style={{marginTop:"0px"}} alt="logo" id="navbaricons" /></div> }            
-            <div><Link to="/calender"><img src={calendar} alt="calender" id="navbaricons" /></Link></div>
+            <div><Link to="/calender/3"><img src={calendar} alt="calender" id="navbaricons" /></Link></div>
             <div><Link to="/profile"><img src={profile} alt="profile" id="navbaricons" /> </Link></div>
           </div>
       </section>

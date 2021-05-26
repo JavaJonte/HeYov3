@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom' //De importerer behövs för att Routing ska fungera
+import {BrowserRouter as Router, Link, Switch, Route, useParams } from 'react-router-dom' //De importerer behövs för att Routing ska fungera
 import firebase from "../fire";
 import Event from "./Event";
 import Container from "react-bootstrap/Container";
@@ -8,6 +8,7 @@ import { Card} from "react-bootstrap";
 
 export default function Calendar() {
   const [eventList, setEventList] = useState([]);
+  const {user} = useParams();
 
   useEffect(() => {
     const eventRef = firebase.database().ref("Event");
@@ -17,6 +18,10 @@ export default function Calendar() {
 
       for (let id in events) {
         eventList.push({ id, ...events[id] });
+      }
+
+      if (user === "1"){
+        eventList.push({id: 1000,title:"Grillkväll",date: "10/5",time: "18:00", textarea: "Ta med dig egen dryck och kött så bjuder jag på potatissallad! Vi sitter på min altan, tänder grillen och har det gött helt enkelt! Väl mött"});
       }
       console.log(eventList);
       setEventList(eventList);
@@ -31,7 +36,7 @@ export default function Calendar() {
             Skapa aktivitet +
           </Link>
           
-          {eventList.length !== 0 ? (
+          {eventList.length !== 0 && user === "1" ? (
           eventList.map((event, index)=> <Event event={event} key={index} />)
         ) : (
           //Om aktivitetskalender är tom, visa följande på sidan:
