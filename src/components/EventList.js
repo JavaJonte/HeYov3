@@ -94,7 +94,7 @@ export default function EventList() {
       </figure>
           <br/>
       <button className="addtocalendar" onClick={ () => {
-          history.push("/calender/1");
+          history.push("/calender/3");
       } }>
             <img src={addtocalendar} alt="Add event to your calender" />
       </button>

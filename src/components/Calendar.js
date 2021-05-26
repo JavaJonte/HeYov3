@@ -16,15 +16,10 @@ export default function Calendar() {
       const events = snapshot.val();
       const eventList = [];
 
-      if(user === "3"){
-        for (let id in events) {
-          eventList.push({ id, ...events[id] });
-        }
-      }
-
-
-      if (user === "1"){
-        eventList.push({id: 1000,title:"Grillkväll",date: "10/5",time: "18:00", textarea: "Ta med dig egen dryck och kött så bjuder jag på potatissallad! Vi sitter på min altan, tänder grillen och har det gött helt enkelt! Väl mött"});
+      if (user === "3"){
+        eventList.push({id: 1000, title:"Grillkväll", date: "10/5", time: "18:00", textarea: "Ta med dig egen dryck och kött så bjuder jag på potatissallad! Vi sitter på min altan, tänder grillen och har det gött helt enkelt! Väl mött"});
+      } for (let id in events) {
+        eventList.push({ id, ...events[id] });
       }
       console.log(eventList);
       setEventList(eventList);

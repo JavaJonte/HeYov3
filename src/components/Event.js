@@ -35,7 +35,7 @@ export default function Event({ event }) {
           </Link>
       </figure>
       <br/>
-      <button className="deleteButton" src onClick={deleteEvent}>
+      <button className="deleteButton" onClick={deleteEvent}>
       <img src={removecalendar} width="48" height="34" alt="Add as a contact" />
       </button>
 
