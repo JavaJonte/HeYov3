@@ -12,10 +12,11 @@ import Module from "../components/SendFriendRequest";
 export default function Johnny() {
   return (
       <>
+      <br/>
+      <Card.Title className="title">Profil</Card.Title>
             <div className="profilecard">
                 <Card>
                     <Card.Body>
-                        <Card.Title className="title">Profil</Card.Title>
                         <Card.Img className="img" variant="top" width="103" height="103" src={rocky} alt="Rocky profile icon" />
                         <Card.Text className="name">Rocky 38</Card.Text>
                         <Card.Subtitle className="bio">

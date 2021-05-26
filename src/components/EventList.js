@@ -9,6 +9,7 @@ import sonny from '../profileicons/sonny.svg';
 import rocky from '../profileicons/rocky.svg';
 import jeff from '../profileicons/jeff.svg';
 import addtocalendar from '../profileicons/addtocalendar.svg';
+import { Card} from "react-bootstrap";
 
 export default function EventList() {
   const [eventList, setEventList] = useState([]);
@@ -31,6 +32,7 @@ export default function EventList() {
     <>
       <div className="webcontext">
           <Container>
+        <Card.Text className="title">Aktiviteter</Card.Text>
         <Link to="/addevent" id="addButton">
           Skapa aktivitet +
         </Link>

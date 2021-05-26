@@ -4,6 +4,7 @@ import firebase from "../fire";
 import Event from "./Event";
 import Container from "react-bootstrap/Container";
 import activities from '../navbar/activities.svg';
+import { Card} from "react-bootstrap";
 
 export default function Calendar() {
   const [eventList, setEventList] = useState([]);
@@ -25,17 +26,17 @@ export default function Calendar() {
     return (
         <div className="webcontext">
         <Container>
+        <Card.Text className="title">Min kalender</Card.Text>
         <Link to="/addevent" id="addButton">
             Skapa aktivitet +
           </Link>
-
+          
           {eventList.length !== 0 ? (
           eventList.map((event, index)=> <Event event={event} key={index} />)
         ) : (
           //Om aktivitetskalender är tom, visa följande på sidan:
           <div className="emptyCalendar">
           <Container>
-            <h1>Min kalender</h1>
             <h2>
               Du har inga kommande aktiviteter än. Kolla vad dina vänner
               pysslar med för att se om det finns något att haka på!
