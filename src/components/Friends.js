@@ -10,17 +10,16 @@ import lenny from "../profileicons/lenny.svg";
 import jeff from "../profileicons/jeff.svg";
 
 export default function Friends() {
-  return (
-    <Container>
-      <Card.Text className="title">Mina vänner</Card.Text>
-
-      <div className="myfriends">
-        <figure>
-          <Link to="/Johnny">
-            <img src={johnny} alt="Johnny" width="77" height="77" />
-          </Link>
-          <figcaption>Johnny</figcaption>
-        </figure>
+    return (
+      <Container>
+        <Card.Text className="title">Mina vänner</Card.Text>
+        <div className="myfriends">
+          <figure>
+            <Link to="/Johnny">
+              <img src={johnny} alt="Johnny" width="77" height="77" />
+            </Link>
+            <figcaption>Johnny</figcaption>
+          </figure>
 
         <figure>
           <Link to="/Ronny">
