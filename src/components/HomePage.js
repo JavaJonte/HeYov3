@@ -5,6 +5,9 @@ export default function HomePage() {
   return (
     <Container>
       <h1 className="landing-h1">
+        <br/>
+        <br/>
+        <br/>
         Friends,<br></br> {/* FIXA CSSEN */}
         old & new <br></br>
         lets hang out!

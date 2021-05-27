@@ -48,6 +48,7 @@ button {
 }
 /*Inloggning/Registrering sida*/
 .login .loginContainer {
+  height: 1408px;
   padding-top: 160px;
   margin-top: 20%;
   padding-left: 45px;
@@ -74,7 +75,6 @@ button {
   line-height: 24px;
   display: flex;
   align-items: center;
-
 }
 
 .login .loginContainer input {
@@ -99,7 +99,7 @@ button {
   width: 100%;
   text-align: center;
   padding-bottom: 200px;
-  margin-top: -150px;
+  margin-top: -650px;
   margin-bottom: 50px;
   font-family: Ranchers;
   font-style: normal;
@@ -147,12 +147,6 @@ button {
 
 .login .loginContainer .btnContainer p span:hover {
   color: red;
-}
-
-.login .loginContainer {
-  color: red;
-  font-size: 16px;
-  height: 1308px;
 }
 .errorMsg {
   color: red;
@@ -406,4 +400,8 @@ figure {
   text-align: right;
   background: transparent;
   padding-left: 270px;
+}
+
+.landing-h1 {
+padding-top: 50%;
 }
