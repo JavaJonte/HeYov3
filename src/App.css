@@ -19,8 +19,25 @@ button {
   letter-spacing: 0.09em;
   text-decoration: none;
   color: white;
-  /*filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));*/
 }
+
+.button1 {
+  width: 176px;
+  background: #FF9D66;
+  border-radius: 40px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  border-color: transparent;
+  box-shadow: none;
+  font-family: Poppins;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 150px;
+}
+
 
 .login {
   width: 100%;
@@ -45,7 +62,23 @@ button {
   background-image: url('./navbar/test.svg'), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(20, 20, 20, 0.505208) 50.52%, rgba(26, 26, 26, 0.635417) 63.54%, rgba(41, 41, 41, 0.838542) 83.85%, #404040 100%);
 }
 
-.login .loginContainer label {
+.loginContainer2 {
+  height: 812px;
+  padding-top: 160px;
+  padding-left: 45px;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 375px;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('./navbar/test.svg'), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(20, 20, 20, 0.505208) 50.52%, rgba(26, 26, 26, 0.635417) 63.54%, rgba(41, 41, 41, 0.838542) 83.85%, #404040 100%);
+}
+
+.login .loginContainer2 label {
   color: white;
   display: block;
   font-family: Poppins;
@@ -55,9 +88,11 @@ button {
   line-height: 24px;
   display: flex;
   align-items: center;
+  margin-top: -30px;
+  height: 50px;
 }
 
-.login .loginContainer input {
+.login .loginContainer2 input {
   /* position: absolute; */
   width: 298px;
   height: 44px;
@@ -73,6 +108,7 @@ button {
   font-weight: 300;
   font-size: 16px;
   padding-left: 16px;
+  margin-top: -10px;
 }
 
 .heyo {

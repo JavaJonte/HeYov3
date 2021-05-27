@@ -18,7 +18,7 @@ const Login = (props) => {
   return (
     <>
       <section className="login">
-        <Container className="loginContainer">
+        <Container className="loginContainer2">
           <label>E-post</label>
           <input
             type="text"
@@ -36,7 +36,7 @@ const Login = (props) => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <p className="errorMsg">{passwordError}</p> 
-          <button onClick={hasAccount ? handleLogin : handleSignUp}> Go!  </button>
+          <button className="button1"onClick={hasAccount ? handleLogin : handleSignUp}> Go!  </button>
         </Container>
       </section>
       
