@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import HomePage from "./HomePage"
 
 
 const Login = (props) => {
@@ -36,12 +35,11 @@ const Login = (props) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-
           <p className="errorMsg">{passwordError}</p> 
           <button onClick={hasAccount ? handleLogin : handleSignUp}> Go!  </button>
         </Container>
-        
       </section>
+      
     </>
   );
 };

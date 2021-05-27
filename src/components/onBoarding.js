@@ -3,7 +3,6 @@ import { Button, Container } from "react-bootstrap";
 import fire from "../fire";
 import Hero from "./Hero";
 import LoginSystem from "./LoginSystem";
-import HomePage from "./HomePage"
 
 export const OnBoarding = () => {
   const [hasAccount, setHasAccount] = useState(false);

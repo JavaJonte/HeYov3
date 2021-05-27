@@ -22,35 +22,16 @@ button {
   /*filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));*/
 }
 
-#test {
-  /* position: absolute; */
-  width: 28px;
-  height: 24px;
-  left: 3009px;
-  top: 548px;
-  background: transparent;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-decoration-line: underline;
-  color: #FF9D66;
-}
-
 .login {
   width: 100%;
   min-height: 100vh;
-  padding: 0 20px;
+  padding: 0px;
   display: flex;
 }
 /*Inloggning/Registrering sida*/
 .login .loginContainer {
   height: 1408px;
   padding-top: 160px;
-  margin-top: 20%;
   padding-left: 45px;
   font-style: normal;
   font-weight: 300;
@@ -62,7 +43,6 @@ button {
   flex-direction: column;
   justify-content: center;
   background-image: url('./navbar/test.svg'), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(20, 20, 20, 0.505208) 50.52%, rgba(26, 26, 26, 0.635417) 63.54%, rgba(41, 41, 41, 0.838542) 83.85%, #404040 100%);
-  
 }
 
 .login .loginContainer label {
@@ -133,7 +113,7 @@ button {
   /* flex-wrap: unset; */
   /* justify-content: end; */
   /* inline-size: auto; */
-  margin: 70px;
+  margin-top: 20px;
 }
 
 .login .loginContainer .btnContainer p span {
@@ -400,8 +380,4 @@ figure {
   text-align: right;
   background: transparent;
   padding-left: 270px;
-}
-
-.landing-h1 {
-padding-top: 50%;
 }
