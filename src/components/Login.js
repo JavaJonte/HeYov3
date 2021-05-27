@@ -1,5 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import HomePage from "./HomePage"
+
 
 const Login = (props) => {
   const {
@@ -38,7 +40,9 @@ const Login = (props) => {
           <p className="errorMsg">{passwordError}</p> 
           <button onClick={hasAccount ? handleLogin : handleSignUp}> Go!  </button>
 
+          <HomePage />
         </Container>
+        
       </section>
     </>
   );

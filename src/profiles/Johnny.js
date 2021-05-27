@@ -8,6 +8,7 @@ import lenny from '../profileicons/lenny.svg';
 import addcontact from '../profileicons/addcontact.svg';
 import pew from '../profileicons/pew.svg';
 import Module from "../components/SendFriendRequest";
+import Test from '../components/Test';
 
 export default function Johnny() {
   return (
@@ -25,7 +26,7 @@ export default function Johnny() {
                         </Card.Subtitle>
 
                         <div className="othercontacticons" >
-                        <Module />
+                        <Test />
                         </div>
 
                         <Card.Text className="buddies">Kontakter</Card.Text>
