@@ -60,8 +60,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url('./navbar/loginBackground.svg'), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(20, 20, 20, 0.505208) 50.52%, rgba(26, 26, 26, 0.635417) 63.54%, rgba(41, 41, 41, 0.838542) 83.85%, #404040 100%);
-  color: black;
+  background-image: url('./navbar/test.svg'), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(20, 20, 20, 0.505208) 50.52%, rgba(26, 26, 26, 0.635417) 63.54%, rgba(41, 41, 41, 0.838542) 83.85%, #404040 100%);
+  
 }
 
 .login .loginContainer label {
@@ -406,22 +406,4 @@ figure {
   text-align: right;
   background: transparent;
   padding-left: 270px;
-}
-
-.landing-h1 {
-  font-size: x-large;
-  color: red;
-}
-.landing-h2 {
-  color: green;
-}
-.right-quote {
-  font-size:xx-small;
-  background-color: green; 
-}
-.left-quote {
-  background-color: red;
-}
-.footer {
-  background-color: red;
 }

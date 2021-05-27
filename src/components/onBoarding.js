@@ -42,17 +42,16 @@ export const OnBoarding = () => {
         <section className="login">
           <Container className="loginContainer">
             <Container className="btnContainer">
-              <div className="heyo">HEYO!</div>
-              <Button onClick={handleLogin}>
-                &nbsp;&nbsp;&nbsp;LOGGA IN&nbsp;&nbsp;&nbsp;
-              </Button>
-              <p>
-                Har du inget konto? <br />
-                <span onClick={handleRegisterLogin}>Registrera dig här!</span>
-              </p>
-              <HomePage />
-              </Container>
-              
+                <div className="heyo">HEYO!</div>
+                <Button onClick={handleLogin}>&nbsp;&nbsp;&nbsp;LOGGA IN&nbsp;&nbsp;&nbsp;</Button>
+                <p>
+                    Har du inget konto? <br/>
+                    <span onClick={handleRegisterLogin}>
+                        Registrera dig här!
+                    </span>
+                </p>
+            </Container>
+            
           </Container>
         </section>
       )}
