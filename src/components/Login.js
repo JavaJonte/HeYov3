@@ -38,7 +38,7 @@ const Login = (props) => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <p className="errorMsg">{passwordError}</p> 
-          <button className="button1"onClick={hasAccount ? handleLogin : handleSignUp}> Go!  </button>
+          <button className="button1" onClick={hasAccount ? handleLogin : handleSignUp}> Go!  </button>
         </Container>
         </Container>
         
