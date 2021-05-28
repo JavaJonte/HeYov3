@@ -26,7 +26,7 @@ export default function Johnny() {
                         </Card.Subtitle>
 
                         <div className="othercontacticons" >
-                        <Test />
+                        <Module />
                         </div>
 
                         <Card.Text className="buddies">Kontakter</Card.Text>
